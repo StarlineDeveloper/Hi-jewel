@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hijewel.ui.MyNestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_actions">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+                <RelativeLayout
+                    android:id="@+id/ind_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#99ffffff">
+
+                    <com.rd.PageIndicatorView
+                        android:id="@+id/pageIndicatorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp" />
+
+                </RelativeLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/images"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEDED"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/gradient"
+                    android:rotation="180" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEDED"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/size_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 GM"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRICE : 20.00"
+                        android:visibility="gone"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Kalkatti Plaster Necklace-6B2A0127"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(SKU : A001)"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp" />
+
+                    <RadioGroup
+                        android:id="@+id/carats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/c_18"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp">
+
+                        <RadioButton
+                            android:id="@+id/c_18"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/carat_selector"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:onClick="onRadioButtonClicked"
+                            android:padding="5dp"
+                            android:text="18 Carat Gold" />
+
+                        <RadioButton
+                            android:id="@+id/c_22"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/carat_selector"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:onClick="onRadioButtonClicked"
+                            android:padding="5dp"
+                            android:text="22 Carat Gold" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/gradient" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DESCRIPTION"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="This jewellery is handcrafted by skilled craftsmen &amp; certified by independent laboratories. The Jewellery will be dispatch within 5 to 7 working days This jewellery is handcrafted by skilled craftsmen &amp; certified by independent laboratories. The Jewellery will be dispatch within 5 to 7 working days This jewellery is handcrafted by skilled craftsmen &amp; certified by independent laboratories. The Jewellery will be dispatch within 5 to 7 working days"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.hijewel.ui.MyNestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@+id/bottom_actions"
+        android:background="@drawable/gradient" />
+
+    <LinearLayout
+        android:id="@+id/bottom_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:id="@+id/addtobag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="addToCart">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/bag_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_add_cart"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="Add to Cart"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/buy_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:animateLayoutChanges="true"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="buyNow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cart"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#fff"
+                    android:gravity="center"
+                    android:text="Buy Now"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

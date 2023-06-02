@@ -1,0 +1,163 @@
+{
+  "project_info": {
+    "project_number": "1087022798180",
+    "firebase_url": "https://bullion-2020.firebaseio.com",
+    "project_id": "bullion-2020",
+    "storage_bucket": "bullion-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087022798180:android:6c738aa2b866b4f4f05671",
+        "android_client_info": {
+          "package_name": "com.hijewel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_s6_XL6aupkIUF81OGqum4JLy4cRkFXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1087022798180-qb1nl257picrmg4ujjqo4tjf8b43nelm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.HIJewel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087022798180:android:2ca5fb75bd717f92f05671",
+        "android_client_info": {
+          "package_name": "com.lawatjewellers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087022798180-h57moj7pno73ug4rh2uctioebhqu397r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawatjewellers",
+            "certificate_hash": "e1f20d995b08c086483f32f0e8b754692d092b0c"
+          }
+        },
+        {
+          "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_s6_XL6aupkIUF81OGqum4JLy4cRkFXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1087022798180-qb1nl257picrmg4ujjqo4tjf8b43nelm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.HIJewel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087022798180:android:3912b1ac744d6238f05671",
+        "android_client_info": {
+          "package_name": "com.onesignalnotificationsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_s6_XL6aupkIUF81OGqum4JLy4cRkFXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1087022798180-qb1nl257picrmg4ujjqo4tjf8b43nelm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.HIJewel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087022798180:android:d42e04919f9d43e9f05671",
+        "android_client_info": {
+          "package_name": "com.sohan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_s6_XL6aupkIUF81OGqum4JLy4cRkFXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087022798180-25vl67r3sukv9c8vqft3nhk37v4o3oln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1087022798180-qb1nl257picrmg4ujjqo4tjf8b43nelm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.HIJewel"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

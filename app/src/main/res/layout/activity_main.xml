@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hijewel.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <com.hijewel.utils.ScrollTextView
+            android:id="@+id/tvMarquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/application_gradient_bg"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvMarquee"
+            android:background="#f1f1f1" />
+
+        <View
+            android:id="@+id/toolbar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/toolbar"
+            android:background="@drawable/gradient"
+            android:rotation="180" />
+
+        <TextView
+            android:id="@+id/social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_social"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="S\nO\nC\nI\nA\nL"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.hijewel.ui.MovableFloatingActionButton
+            android:id="@+id/ivWhatsApp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:padding="1dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_whatapp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginLeft="-8dp"
+        android:elevation="8dp">
+
+        <include layout="@layout/drawer_layout" />
+    </FrameLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backnew"
+    android:orientation="vertical">
+
+
+    <com.hijewel.ui.MyNestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <me.angeldevil.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/banners"
+                android:layout_width="match_parent"
+                android:layout_height="165dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/utsav_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tag"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/utsav" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="UTSAV"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.hijewel.ui.NonScrollGridView
+                        android:id="@+id/utsav"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="2"
+                        android:verticalSpacing="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rohit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tag"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/rohit" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="PLATINUM"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.hijewel.ui.NonScrollGridView
+                        android:id="@+id/rohit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="2"
+                        android:verticalSpacing="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rohit_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/tag"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/rohit" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="ROHIT"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.hijewel.ui.NonScrollGridView
+                        android:id="@+id/rohit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="2"
+                        android:verticalSpacing="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.hijewel.ui.MyNestedScrollView>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/search"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--app:backgroundTint="@color/colorPrimaryDark"-->
+    <!--app:fabSize="normal"-->
+    <!--app:srcCompat="@drawable/ic_search_black_24dp"-->
+    <!--app:useCompatPadding="true"-->
+    <!--tools:ignore="VectorDrawableCompat" />-->
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <!--    //<string name="app_name">HIJ ROHIT</string>-->
+    <string name="app_name">ROHIT CHAIN | HI JEWEL</string>
+    <string name="update_txt">New version is available, please update now for exploring best features of </string>
+    <string name="default_notification_channel_id">100</string>
+    <string name="default_notification_channel_title">app</string>
+    <string name="error_internet_msg">Please check your internet conection</string>
+</resources>

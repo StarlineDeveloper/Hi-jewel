@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backnew"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="2.5dp"
+            android:paddingLeft="2.5dp"
+            android:paddingRight="2.5dp"
+            android:paddingTop="47.5dp" />
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/progress"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            app:loading_color="@color/colorAccent"
+            app:loading_speed="11"
+            app:loading_width="2.5dp" />
+
+        <TextView
+            android:id="@+id/no_prod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Comming Soon ... "
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cats_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimaryDark"
+            android:clipToPadding="false"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2.5dp"
+            android:paddingRight="2.5dp"
+            android:paddingTop="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/categories"
+            android:background="@drawable/gradient"
+            android:rotation="180" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_gender"
+        app:useCompatPadding="true"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_search_black_24dp"
+        app:useCompatPadding="true"
+        tools:ignore="VectorDrawableCompat" />
+
+</RelativeLayout>

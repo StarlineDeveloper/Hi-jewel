@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hijewel.ui.MyNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/backnew"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/splashsss" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b9000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rohit Chain &amp; Jewellers"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/border"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rohit Gems &amp; Jewellers"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/border"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hiranya India Jewel"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/border"
+                    android:tint="@color/colorPrimary" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_below="@+id/top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="13dp"
+                    android:gravity="center_vertical"
+                    android:text="PERSON NAME"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:gravity="center_vertical"
+                    android:text="Manish Gupta"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="53dp"
+                android:background="#c3c3c3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_contact_num"
+                    android:drawablePadding="13dp"
+                    android:gravity="center_vertical"
+                    android:text="CONTACT"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="033 22582876"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="+91 ‭09830037239‬"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="53dp"
+                android:background="#c3c3c3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_contact_email"
+                    android:drawablePadding="13dp"
+                    android:gravity="center_vertical"
+                    android:text="EMAIL ID"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:gravity="center_vertical"
+                    android:text="Wow.manish@gmail.com"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="53dp"
+                android:background="#c3c3c3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:drawablePadding="13dp"
+                    android:gravity="center_vertical"
+                    android:text="ADDRESS"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:gravity="center_vertical"
+                    android:text="1 mirbahar ghat street ground floor Sonapatty kolkata 700007."
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="53dp"
+                android:background="#c3c3c3" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/gradient"
+            android:rotation="180" />
+    </RelativeLayout>
+</com.hijewel.ui.MyNestedScrollView>

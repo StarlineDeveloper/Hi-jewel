@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backnew">
+
+
+
+    <com.hijewel.ui.MyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contact1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/top"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splashsss" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#b9000000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/company1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rohit Chain &amp; Jewellers"
+                                android:textColor="#fff"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/border1"
+                                android:layout_width="200dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/border"
+                                android:tint="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/company2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rohit Gems &amp; Jewellers"
+                                android:textColor="#fff"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/border2"
+                                android:layout_width="200dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/border"
+                                android:tint="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/company3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hiranya India Jewel"
+                                android:textColor="#fff"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/border3"
+                                android:layout_width="200dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/border"
+                                android:tint="@color/colorPrimary" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/top"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/person1_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_person"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="PERSON NAME"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/person1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:gravity="center_vertical"
+                                android:text="Manish Gupta"
+                                android:textSize="13dp"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view11"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="53dp"
+                            android:background="#c3c3c3" />
+
+                        <LinearLayout
+                            android:id="@+id/number1_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_contact_num"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="CONTACT"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/number11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="033 22582876"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/colorPrimaryDark" />
+
+                                <View
+                                    android:id="@+id/number1_view"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/colorPrimaryDark" />
+
+                                <TextView
+                                    android:id="@+id/number12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textSize="13dp"
+                                    android:text="+91 ‭09830037239‬"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view12"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="53dp"
+                            android:background="#c3c3c3" />
+
+                        <LinearLayout
+                            android:id="@+id/email1_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_contact_email"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="EMAIL ID"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/email1"
+                                android:textSize="13dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:autoLink="email"
+                                android:gravity="center_vertical"
+                                android:text="Wow.manish@gmail.com"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorLink="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view13"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="53dp"
+                            android:background="#c3c3c3" />
+
+                        <LinearLayout
+                            android:id="@+id/address1_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_address"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="ADDRESS"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/address1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:gravity="center_vertical"
+                                android:textSize="13dp"
+                                android:text="1 mirbahar ghat street ground floor Sonapatty kolkata 700007."
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="180dp"
+                        android:background="@drawable/gradient"
+                        android:rotation="180" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contact2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/top1"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splashsss" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#b9000000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/company4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rohit Chain &amp; Jewellers"
+                                android:textColor="#fff"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/border4"
+                                android:layout_width="200dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/border"
+                                android:tint="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/company5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rohit Gems &amp; Jewellers"
+                                android:textColor="#fff"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/border5"
+                                android:layout_width="200dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/border"
+                                android:tint="@color/colorPrimary" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/top1"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/person2_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_person"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="PERSON NAME"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/person2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:textSize="13dp"
+                                android:gravity="center_vertical"
+                                android:text="Manish Gupta"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view21"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="53dp"
+                            android:background="#c3c3c3" />
+
+                        <LinearLayout
+                            android:id="@+id/number2_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_contact_num"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="CONTACT"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/number21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="033 22582876"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/colorPrimaryDark" />
+
+                                <View
+                                    android:id="@+id/number2_view"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@color/colorPrimaryDark" />
+
+                                <TextView
+                                    android:id="@+id/number22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="+91 ‭09830037239‬"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view22"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="53dp"
+                            android:background="#c3c3c3" />
+
+                        <LinearLayout
+                            android:id="@+id/email2_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_contact_email"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="EMAIL ID"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/email2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:autoLink="email"
+                                android:textSize="13dp"
+                                android:gravity="center_vertical"
+                                android:text="Wow.manish@gmail.com"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorLink="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view23"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="53dp"
+                            android:background="#c3c3c3" />
+
+                        <LinearLayout
+                            android:id="@+id/address2_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_address"
+                                android:drawablePadding="13dp"
+                                android:gravity="center_vertical"
+                                android:text="ADDRESS"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/address2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="38dp"
+                                android:textSize="13dp"
+                                android:gravity="center_vertical"
+                                android:text="1 mirbahar ghat street ground floor Sonapatty kolkata 700007."
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="180dp"
+                        android:background="@drawable/gradient"
+                        android:rotation="180" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </com.hijewel.ui.MyNestedScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/gradient"
+        android:rotation="180" />
+</RelativeLayout>
